@@ -1,8 +1,8 @@
 # DNS_spoof
 
-## +Used Modules.
+## Used Modules.
 
-### -netfilterqueue.
+### netfilterqueue.
 
 This module is used to redirect the flow of packets, the funtions process_packet will receive the packet and turn it into a scapy packet that i can edit(if you wanna know more about the module scapy go to another of my repositories like ARP_spoof).
 When i verify that i have some request from my target(i can know if i have one request because i became the MITM, go to my repository ARP_spoof) if that's true i'm gonna take the value of the url and see if is the same web-site that i wanna spoof, and if it is i can send the DNS response with my ip destination, but with the same url name. And i can change the field "an" that contain the real answer to my costumized response and change the field "ancount" for just one response. Finally i'm gonna turn the scapy packet to a real packet.
